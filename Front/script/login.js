@@ -2,7 +2,14 @@ const inpUser = document.getElementById('username');
 const inpPass = document.getElementById('password');
 const btnLogin = document.getElementById('button');
 
+const enter = (e) => {
+    if(e.keyCode === 13){
+        logar();
+    }
+}
+
 const logar = () => {
+    console.log(inpUser.value);
     let usuario = {
         "email": inpUser.value,
         "senha": inpPass.value
@@ -16,9 +23,9 @@ const logar = () => {
         body: JSON.stringify(usuario)
     }).then(response => { return response.json() })
     .then(info => {
-        if (info[0] != undefined) {
-            window.localStorage.setItem('usuario', inpUser);
-            window.location.href = '../Home/index.html';
+        if(info != undefined) {
+            window.localStorage.setItem('usuario', JSON.stringify(info));
+            window.location.href = '../pages/home.html';
         } else {
             alert('Erro no Login, username ou senha incorreta!');
             window.location.reload();

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reenyedito: Explore jogos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style/home.css">
     <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
 </head>
-<body>
+<body onload="carregar()">
     <header>
         <div>
             <img class="logo" src="../assets/favicon.png" alt="Logo Reenyedito"/>
@@ -20,27 +20,34 @@
         </div>
     </header>
     <main>
+        <div class="favoritos">
+            <img class="icos" src="../assets/icons/favorito.png" alt="Favoritos" />
+            <img class="icos" src="../assets/icons/SV_icon.png" alt="Stardew Valley" />
+            <img class="icos" src="../assets/icons/Pokemon_icon.png" alt="Pokemon" />
+            <img class="icos" src="../assets/icons/Mario_icon.png" alt="Mario" />
+        </div>
+        
         <div class="timeline">
             <div class="post">
-                <div>
-                    <img class="fota" src="../assets/publi.jpg" alt="Publicação" />
+                <div class="paasa">
+                    <span class="conteudo">como que faz pra ser feliz nessa vida quando vc trabalha e estuda ?</span>
                 </div>
                 <div class="escritos">
                     <div class="infos">
                         <span class="negritosos">Publicado por:</span>
-                        <small>victoriacduo às 14:30:23</small>
+                        <small class="publisher">victoriacduo às 14:30:23</small>
                     </div>
     
                     <div class="infos">
-                        <span class="negritosos">Categoria</span>
-                        <small>Stardew Valley</small>
+                        <span class="negritosos line2">Categoria</span>
+                        <small class="cat_published">Stardew Valley</small>
                     </div>
                 </div>
             </div>
 
             <div class="post">
-                <div>
-                    <img class="fota" src="../assets/mario.png" alt="Publicação" />
+                <div class="paasa">
+                    <span>como que passa de semestre sem aparecer nas aulas ?</span>
                 </div>
                 <div class="escritos">
                     <div class="infos">
@@ -54,10 +61,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="menu">
-            <span>FAVORITOS</span>
         </div>
     </main>
 
@@ -83,4 +86,5 @@
         </div>
     </div>
 </body>
+<script src="../script/home.js"></script>
 </html>
