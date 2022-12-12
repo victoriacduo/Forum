@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 const Drawer = createDrawerNavigator();
 
 import Home from '../Pages/Home/Home.js';
+import Usuario from '../Pages/Usuario/Usuario.js';
 import Favoritados from '../Pages/Favoritos/Favoritados.js';
 
 export default function Seila(){
@@ -12,6 +12,7 @@ export default function Seila(){
         <Drawer.Navigator>
             <Drawer.Screen name="Home" component={Home}/>
             <Drawer.Screen name="Favoritos" component={Favoritados}/>
+            <Drawer.Screen name="Usuario" component={Usuario}/>
         </Drawer.Navigator>
     );
 }

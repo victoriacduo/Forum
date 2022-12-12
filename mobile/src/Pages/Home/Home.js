@@ -4,7 +4,7 @@ import { View, TextInput, Image, Text, StyleSheet } from 'react-native';
 export default function Home({ navigation }) {
     return(
         <View style={style.container}>
-            <TextInput style={style.input} placeholder="buscar usuário ou publicação..." />
+            <TextInput style={style.input} placeholder="buscar publicação..." />
             <View style={style.publi}>
                 <Image style={style.img} source={{ uri: 'https://3.bp.blogspot.com/-F5hLHaH8jps/XOMo0VJ8KdI/AAAAAAAABd0/8wfQwM-qgUIbIRLp2Z37HOV2U67i4imCgCLcBGAs/s1600/naom_5bbddaa8a4c77.jpg' }}/>
                 <View style={style.infos}>
