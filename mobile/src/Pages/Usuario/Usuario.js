@@ -15,10 +15,10 @@ export default function Usuario(){
                     <Image style={style.icon} source={{ uri: 'https://github.com/BrunoFavaro714/Senai/blob/main/2%C2%BASemestre/Projetos/Forum/front/assets/icons/SV_icon.png?raw=true' }} />
                 </View>
                 <View style={style.ajdj}>
-                    <TouchableOpacity style={style.bots}>Alterar username</TouchableOpacity>
-                    <TouchableOpacity style={style.bots}>Alterar senha</TouchableOpacity>
-                    <TouchableOpacity style={style.bots}>Minhas publicações</TouchableOpacity>
-                    <TouchableOpacity style={style.bots}>Deletar conta</TouchableOpacity>
+                    <TouchableOpacity style={style.bots}><Text>Alterar username</Text></TouchableOpacity>
+                    <TouchableOpacity style={style.bots}><Text>Alterar senha</Text></TouchableOpacity>
+                    <TouchableOpacity style={style.bots}><Text>Minhas publicações</Text></TouchableOpacity>
+                    <TouchableOpacity style={style.bots}><Text>Deletar conta</Text></TouchableOpacity>
                 </View>
             </View>
         </View>

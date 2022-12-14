@@ -6,7 +6,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 const Tab = createMaterialBottomTabNavigator();
 
 import Home from './src/Drawer/index.js';
-import Usuario from './src/Drawer/index.js';
+import Usuario from './src/pages/Usuario/Usuario';
 
 export default function App(){
   return(

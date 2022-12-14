@@ -12,7 +12,6 @@ export default function Seila(){
         <Drawer.Navigator>
             <Drawer.Screen name="Home" component={Home}/>
             <Drawer.Screen name="Favoritos" component={Favoritados}/>
-            <Drawer.Screen name="Usuario" component={Usuario}/>
         </Drawer.Navigator>
     );
 }
